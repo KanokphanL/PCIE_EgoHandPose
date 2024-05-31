@@ -44,8 +44,6 @@ If choose to finetuning on manual data with pretrained weight on automatic data,
 
 ## Inference
 
-Download pretrained ([EvalAI baseline](https://eval.ai/web/challenges/challenge-page/2249/overview)) model weight of hand-ego-pose-potter from [here](https://drive.google.com/drive/folders/1WSvV7wvmYBvFhB5KwK6PRXwV5dpHd9Hf?usp=sharing).
-
 Run command below to perform inference of pretrained model on test set, and save the inference output as a single JSON file. It will be stored at `output/inference_output` by default. 
 ```
 python3 inference.py \
@@ -53,3 +51,5 @@ python3 inference.py \
     --gt_anno_dir <gt_anno_dir> \
     --aria_img_dir <aria_img_dir>
 ```
+
+The results can be submitted to ([EvalAI baseline](https://eval.ai/web/challenges/challenge-page/2249/overview)).
