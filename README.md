@@ -38,6 +38,7 @@ python3 train_vit.py \
 ```
 
 Check the script `train_vit.sh` for the command to train ViT models. 
+
 If choose to finetuning on manual data with pretrained weight on automatic data, set `pretrained_ckpt` to be the path of pretrained hand-ego-pose-potter model weight.
 
 
