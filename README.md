@@ -1,7 +1,6 @@
 # Ego-Exo4D Hand Ego Pose Baseline Model 
 Implementation of hand-ego-pose-potter, a 3D hand pose estimation baseline model based on [POTTER](https://github.com/zczcwh/POTTER/tree/main) in [Ego-Exo4D](https://github.com/facebookresearch/Ego4d) hand ego pose benchmark.
 
-
 ## Data preparation
 Follow instructions [here](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/handpose/data_preparation) to get:
 - ground truth annotation files in `$gt_output_dir/annotation/manual` or `$gt_output_dir/annotation/auto` if using automatic annotations,
@@ -32,6 +31,8 @@ python3 train.py \
     --aria_img_dir <aria_img_dir>
 ```
 If choose to finetuning on manual data with pretrained weight on automatic data, set `pretrained_ckpt` to be the path of pretrained hand-ego-pose-potter model weight.
+
+For ViT backbone, download the backbone from ViTPose and convert the model format to MMPretrain format. Check the script `train_vit.sh` for the command to train ViT models.   
 
 ## Inference
 
