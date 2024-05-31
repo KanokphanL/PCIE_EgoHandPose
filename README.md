@@ -1,5 +1,5 @@
-# Ego-Exo4D Hand Ego Pose Baseline Model 
-Implementation of hand-ego-pose-potter, a 3D hand pose estimation baseline model based on [POTTER](https://github.com/zczcwh/POTTER/tree/main) in [Ego-Exo4D](https://github.com/facebookresearch/Ego4d) hand ego pose benchmark.
+# Ego-Exo4D Hand Ego Pose ViTFormer Solution
+Implementation of hand-ego-pose-potter, a 3D hand pose estimation model based on ViTFormer Solution.
 
 ## Data preparation
 Follow instructions [here](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/handpose/data_preparation) to get:
