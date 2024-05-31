@@ -16,7 +16,8 @@ conda create -n potter_hand_pose python=3.9.16 -y
 conda activate potter_hand_pose
 pip install -r requirement.txt
 ```
-- Install [pytorch](https://pytorch.org/get-started/previous-versions/). The model is tested with `pytorch==2.1.0` and `torchvision==0.16.0`. 
+- Install [pytorch](https://pytorch.org/get-started/previous-versions/). The model is tested with `pytorch==2.1.0` and `torchvision==0.16.0`.
+- Install `mmdet==3.1.0` and `mmpretrain==1.2.0`.
 
 
 ## Training
