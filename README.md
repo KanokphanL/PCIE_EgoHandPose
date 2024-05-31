@@ -22,18 +22,24 @@ pip install -r requirement.txt
 
 ## Training
 
-Download POTTER_cls model weights from [here](https://github.com/zczcwh/POTTER/tree/main/image_classification#2-poolattnformer-models-in-paper-we-denote-as-potter_cls). Put all model weight at `${ROOT}/output/ckpt` directory.  
-Specifically, download model `poolattnformer_s12` and rename it to `cls_s12.pth`
+For ViT backbone, download the backbone from [ViTPose](https://github.com/ViTAE-Transformer/ViTPose) and convert the model format to MMPretrain format. 
 
-Run command below to perform training on manual data with pretrained POTTER_cls weight:
+Run command below to perform training on manual data with pretrained weight:
 ```
-python3 train.py \
+python3 train_vit.py \
     --gt_anno_dir <gt_anno_dir> \
-    --aria_img_dir <aria_img_dir>
+    --aria_img_dir <aria_img_dir> \
+    --yolox_hsv_random_aug \
+    --albumentation_aug \
+    --random_vertical_flip \
+    --loss MPJPELoss \
+    --cfg_file <config_file> \
+    --pretrained_ckpt <pretrained_weight_file>
 ```
+
+Check the script `train_vit.sh` for the command to train ViT models. 
 If choose to finetuning on manual data with pretrained weight on automatic data, set `pretrained_ckpt` to be the path of pretrained hand-ego-pose-potter model weight.
 
-For ViT backbone, download the backbone from [ViTPose](https://github.com/ViTAE-Transformer/ViTPose) and convert the model format to MMPretrain format. Check the script `train_vit.sh` for the command to train ViT models.   
 
 ## Inference
 
