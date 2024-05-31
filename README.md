@@ -32,7 +32,7 @@ python3 train.py \
 ```
 If choose to finetuning on manual data with pretrained weight on automatic data, set `pretrained_ckpt` to be the path of pretrained hand-ego-pose-potter model weight.
 
-For ViT backbone, download the backbone from ViTPose and convert the model format to MMPretrain format. Check the script `train_vit.sh` for the command to train ViT models.   
+For ViT backbone, download the backbone from [ViTPose](https://github.com/ViTAE-Transformer/ViTPose) and convert the model format to MMPretrain format. Check the script `train_vit.sh` for the command to train ViT models.   
 
 ## Inference
 
