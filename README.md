@@ -52,4 +52,4 @@ python3 inference.py \
     --aria_img_dir <aria_img_dir>
 ```
 
-The results can be submitted to ([EvalAI baseline](https://eval.ai/web/challenges/challenge-page/2249/overview)).
+The results can be submitted to ([EvalAI leaderboard](https://eval.ai/web/challenges/challenge-page/2249/overview)).
