@@ -1,0 +1,13 @@
+tqdm
+regex
+projectaria-tools
+opencv-python
+av
+numpy
+pandas
+pillow
+torch
+torchvision
+black
+ufmt
+usort
