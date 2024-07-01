@@ -53,3 +53,13 @@ python3 inference.py \
 ```
 
 The results can be submitted to ([EvalAI leaderboard](https://eval.ai/web/challenges/challenge-page/2249/overview)).
+
+## Citation
+Please cite the following paper if our code is helpful to your research.
+
+@misc{chen2024pcieegohandposesolutionegoexo4dhand,
+      title={PCIE_EgoHandPose Solution for EgoExo4D Hand Pose Challenge}, 
+      author={Feng Chen and Ling Ding and Kanokphan Lertniphonphan and Jian Li and Kaer Huang and Zhepeng Wang},
+      journal={arXiv},
+      year={2024}
+}
