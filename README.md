@@ -1,12 +1,12 @@
 # Ego-Exo4D Hand Ego Pose ViTFormer Solution
 Implementation of hand-ego-pose-potter, a 3D hand pose estimation model based on ViTFormer Solution.
 
-## Data preparation
+## Data Preparation
 Follow instructions [here](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/handpose/data_preparation) to get:
 - ground truth annotation files in `$gt_output_dir/annotation/manual` or `$gt_output_dir/annotation/auto` if using automatic annotations,
-referred as `gt_anno_dir` below
+referred to as `gt_anno_dir` below
 - corresponding undistorted Aria images in `$gt_output_dir/image/undistorted`, 
-referred as `aria_img_dir` below
+referred to as `aria_img_dir` below
 
 ## Setup
 
@@ -22,9 +22,9 @@ pip install -r requirement.txt
 
 ## Training
 
-For ViT backbone, download the backbone from [ViTPose](https://github.com/ViTAE-Transformer/ViTPose) and convert the model format to MMPretrain format. 
+For the ViT backbone, download the backbone from [ViTPose](https://github.com/ViTAE-Transformer/ViTPose) and convert the model format to MMPretrain format. 
 
-Run command below to perform training on manual data with pretrained weight:
+Run the command below to perform training on manual data with pre-trained weight:
 ```
 python3 train_vit.py \
     --gt_anno_dir <gt_anno_dir> \
@@ -39,12 +39,12 @@ python3 train_vit.py \
 
 Check the script `train_vit.sh` for the command to train ViT models. 
 
-If choose to finetuning on manual data with pretrained weight on automatic data, set `pretrained_ckpt` to be the path of pretrained hand-ego-pose-potter model weight.
+If choose to finetune on manual data with pre-trained weight on automatic data, set `pretrained_ckpt` to be the path of pre-trained hand-ego-pose-potter model weight.
 
 
 ## Inference
 
-Run command below to perform inference of pretrained model on test set, and save the inference output as a single JSON file. It will be stored at `output/inference_output` by default. 
+Run the command below to perform inference of the pre-trained model on the test set, and save the inference output as a single JSON file. It will be stored at `output/inference_output` by default. 
 ```
 python3 inference.py \
     --pretrained_ckpt <pretrained_ckpt> \
@@ -54,4 +54,14 @@ python3 inference.py \
 
 The results can be submitted to ([EvalAI leaderboard](https://eval.ai/web/challenges/challenge-page/2249/overview)).
 
+## Citation
+Please cite the following report if our code is helpful to your research.
+```
+@misc{chen2024pcieegohandposesolutionegoexo4dhand,
+      title={PCIE_EgoHandPose Solution for EgoExo4D Hand Pose Challenge}, 
+      author={Feng Chen and Ling Ding and Kanokphan Lertniphonphan and Jian Li and Kaer Huang and Zhepeng Wang},
+      journal={arXiv},
+      year={2024}
+}
+```
 
