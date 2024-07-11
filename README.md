@@ -59,7 +59,7 @@ The results can be submitted to ([EvalAI leaderboard](https://eval.ai/web/challe
 
 |    Model       |    resolution    |   MPJPE    |    PA-MPJPE  |  config    |   ckpt   |
 | :------------: | :--------------: | :--------: | :----------: | :--------: | :------: | 
-| ViTFormer-Base |      256x192     |    25.22   |     9.40     | [config](/configs/recognition/slowfast/slowfast_r50_8xb8-4x16x1-256e_kinetics400-rgb.py) | [ckpt](https://download.openmmlab.com/mmaction/v1.0/recognition/slowfast/slowfast_r50_8xb8-4x16x1-256e_kinetics400-rgb/slowfast_r50_8xb8-4x16x1-256e_kinetics400-rgb_20220901-701b0f6f.pth) | 
+| ViTFormer-Base |      256x192     |    24.67   |     9.31     | [config](/configs/vit_base_transformerhead_joint.yaml) | [ckpt](https://download.openmmlab.com/mmaction/v1.0/recognition/slowfast/slowfast_r50_8xb8-4x16x1-256e_kinetics400-rgb/slowfast_r50_8xb8-4x16x1-256e_kinetics400-rgb_20220901-701b0f6f.pth) | 
 
 
 ## Citation
