@@ -55,7 +55,7 @@ python3 inference.py \
 The results can be submitted to ([EvalAI leaderboard](https://eval.ai/web/challenges/challenge-page/2249/overview)).
 
 ## Results and Models
-
+Test results the model on validation set:
 
 |    Model       |    resolution    |   MPJPE    |    PA-MPJPE  |  config    |   ckpt   |
 | :------------: | :--------------: | :--------: | :----------: | :--------: | :------: | 
