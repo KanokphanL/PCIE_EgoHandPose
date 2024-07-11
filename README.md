@@ -57,9 +57,11 @@ The results can be submitted to ([EvalAI leaderboard](https://eval.ai/web/challe
 ## Results and Models
 Test results the model on validation set:
 
-|    Model       |    resolution    |   MPJPE    |    PA-MPJPE  |  config    |   ckpt   |
-| :------------: | :--------------: | :--------: | :----------: | :--------: | :------: | 
-| ViTFormer-Base |      256x192     |    24.67   |     9.31     | [config](/configs/vit_base_transformerhead_joint.yaml) | [ckpt](https://drive.google.com/file/d/1Wdye-g2KiC_0XcGy33tfgvWy8Y06ir-4/view?usp=sharing) | 
+|      Model       |    resolution    |   MPJPE    |    PA-MPJPE  |  config    |   ckpt   |
+| :--------------: | :--------------: | :--------: | :----------: | :--------: | :------: | 
+|  ViTFormer-Base  |      256x192     |    24.67   |     9.31     | [config](/configs/vit_base_transformerhead_joint.yaml) | [ckpt](https://drive.google.com/file/d/1Wdye-g2KiC_0XcGy33tfgvWy8Y06ir-4/view?usp=sharing) | 
+|  ViTFormer-Large |      256x192     |    24.67   |     9.31     | [config](/configs/vit_base_transformerhead_joint.yaml) | [ckpt](https://drive.google.com/file/d/1wzHyKPU4Hym9GS48n42J5I-uoTin_QZv/view?usp=sharing) | 
+
 
 
 ## Citation
